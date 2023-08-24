@@ -2,7 +2,7 @@
 
 <p align="center"><img src="./bki/grc.png" alt="Scope" style="max-width:70%"></p>
 
-<p>Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas que são abordadas na disciplina, além disso optei por utilizar o GNS3 para as topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
+<p align="justify">Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas que são abordadas na disciplina, além disso optei por utilizar o GNS3 para as topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
 
 <p align="center">
   <a href="#objetivo">Objetivo</a> •
