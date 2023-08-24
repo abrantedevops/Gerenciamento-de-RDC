@@ -2,7 +2,7 @@
 
 <p align="center"><img src="./bki/grc.png" alt="Scope" style="max-width:70%"></p>
 
-<p>Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas, sendo necessário conhecimento prévio sobre o Docker e Docker Compose, além disso é necessário ter o GNS3 instalado para a execução das topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
+<p>Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas que são abordadas na disciplina, além disso optei por utilizar o GNS3 para as topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
 
 <p align="center">
   <a href="#objetivo">Objetivo</a> •
@@ -32,8 +32,8 @@ Até o momento o estudo da disciplina compreende as seguintes ferramentas:
 - [Docker Compose](https://docs.docker.com/compose/)
 - [Linux](https://www.linux.org/)
 
-### Dependências
-Para as atividades, é necessário ter o [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/) e o [GNS3](https://www.gns3.com/) instalados. Para isso, é possível executar o script de instalação disponível no repositório da seguinte forma (distribuição Ubuntu):
+### Dependências para iniciar as ferramentas por meio de containers
+Para iniciar as ferramentas por meio de containers é essencial ter instalado em sua máquina o Docker e o Docker Compose. Há um script que instala as dependências necessárias juntamente com o GNS3, basta seguir o procedimento abaixo (distribuição Ubuntu).
 
 #### Clone este repositório
 ```bash 
@@ -45,7 +45,7 @@ $ git clone https://github.com/abrantedevops/Gerenciamento-de-RDC.git
 $ cd Gerenciamento-de-RDC
 ```
 
-#### Torne o script de instalação das dependências executável
+#### Caso for necessário torne o script de instalação das dependências executável
 ```bash
 $ chmod +x pkgs.sh
 ```
