@@ -1,7 +1,12 @@
 <h2 align="center">Prática 01</h2>
 
-### Objetivo
+### Objetivo da prática
 <p align="justify">Instalação do Zabbix Server. Colocá-lo para gerenciar 3 ativos de redes: 1 Máquina Linux, 1 Máquina Windows e um roteador. Adicionar gerenciamento do máximo de informações possível: HD, Networking, Ram, Disco, [...]. Além disso, adicione gráficos e alertas ao servidor e faça a integração com o Grafana.</p>
+
+### Diagrama dos componentes da prática
+<p align="center">
+  <img src="./registry/01-diagram.png" alt="Diagrama dos componentes da prática" width="100%">
+</p>
 
 ### Zabbix
 <p align="justify">O Zabbix é um software de monitoramento de redes e sistemas que é capaz de monitorar a disponibilidade e o desempenho de diversos ativos de rede, como servidores, estações de trabalho, roteadores, switches e outros dispositivos de rede. O Zabbix usa uma arquitetura cliente-servidor e técnicas de monitoramento distribuído, que permitem monitorar desempenho e disponibilidade de servidores e outros equipamentos de rede, independentemente da sua localização física. O Zabbix funciona coletando dados de ativos de rede usando diferentes métodos, como o protocolo SNMP, agentes Zabbix instalados em sistemas monitorados e outras interfaces de monitoramento. Esses dados são processados, armazenados e exibidos em painéis e relatórios que auxiliam os administradores a entender o estado da infraestrutura de TI. O Zabbix ainda oferece flexibilidade nas notificações, permitindo que os administradores configurem alertas para serem enviados por vários meios. Além disso, a integração do Zabbix com outras ferramentas, como o Grafana, amplia as capacidades de visualização e análise dos dados monitorados, permitindo criar painéis mais detalhados e personalizados.</p>
@@ -26,6 +31,21 @@ http://localhost:8080
 ```bash
 http://localhost:3000
 ```
+
+### Registros
+
+- <p>Dashboard do monitoramento de algumas métricas das máquinas Linux e Windows:</p>
+<img src="./registry/l-w-dashboard.png" alt="Dashboard do monitoramento de algumas métricas das máquinas Linux e Windows" width="100%">
+
+- <p>Dashboard do monitoramento de algumas métricas do roteador:</p>
+<img src="./registry/router-dashboard.png" alt="Dashboard do monitoramento de algumas métricas do roteador" width="100%">
+
+- <p>Tráfego de rede na interface fa0/0 do roteador:</p>
+<img src="./registry/router-fa0-0-network-traffic.png" alt="Tráfego de rede na interface fa0/0 do roteador" width="100%">
+
+- <p>Envio de notificação por e-mail após simulação de indisponibilidade da VM Windows:</p>
+<img src="./registry/alerts_error.png" alt="Envio de alerta por e-mail após simulação de indisponibilidade da VM Windows" width="100%">
+
 
 
 

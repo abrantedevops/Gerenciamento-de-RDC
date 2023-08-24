@@ -1,6 +1,6 @@
 <h1 align="center">Gerenciamento de Redes de Computadores</h1>
 
-<p align="center"><img src="https://www.ispblog.com.br/wp-content/uploads/2018/08/praticas-monitoramento-rede-1000x351.png" alt="Scope" style="max-width:70%"></p>
+<p align="center"><img src="./bki/grc.png" alt="Scope" style="max-width:70%"></p>
 
 <p>Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas, sendo necessário conhecimento prévio sobre o Docker e Docker Compose, além disso é necessário ter o GNS3 instalado para a execução das topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
 
