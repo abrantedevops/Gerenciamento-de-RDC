@@ -33,37 +33,27 @@ Até o momento o estudo da disciplina compreende as seguintes ferramentas:
 - [Linux](https://www.linux.org/)
 
 ### Dependências
-Para as atividades, é necessário ter o [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/) e o [GNS](https://www.gns3.com/) instalados.
+Para as atividades, é necessário ter o [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/) e o [GNS3](https://www.gns3.com/) instalados. Para isso, é possível executar o script de instalação disponível no repositório da seguinte forma (distribuição Ubuntu):
 
-<!-- #### Clone este repositório
+#### Clone este repositório
 ```bash 
-$ git clone 
+$ git clone https://github.com/abrantedevops/Gerenciamento-de-RDC.git
 ```
 
 #### Acesse a pasta do projeto no terminal/cmd
 ```bash
-$ cd gerenciamento-de-redes-de-computadores
+$ cd Gerenciamento-de-RDC
 ```
 
-#### Execute o comando para subir os containers
+#### Torne o script de instalação das dependências executável
 ```bash
-$ docker-compose up -d
+$ chmod +x pkgs.sh
 ```
 
-#### Acesse o Zabbix
+#### Execute com privilégios de super usuário
 ```bash
-http://localhost:8080
+$ sudo ./pkgs.sh
 ```
-
-#### Acesse o Grafana
-```bash
-http://localhost:3000
-```
-
-#### Acesse o GNS3
-```bash
-http://localhost:3080
-``` -->
 
 ### Contribuição
 Este projeto é para fins de estudo, então sinta-se à vontade para contribuir com sugestões, dicas, melhores práticas e quaisquer outras alterações.
@@ -74,7 +64,28 @@ Este projeto é para fins de estudo, então sinta-se à vontade para contribuir 
 4. Após criar e salvar suas alterações no seu branch, envie um Pull Request para o repositório original.
 
 ### Licença
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+MIT License
+
+Copyright (c) 2012-2023 Thiago Abrante de Souza
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ### Autor
 Mantido por [Thiago Abrante](mailto:thiago.abrante@academico.ifpb.edu.br)
