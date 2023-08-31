@@ -23,11 +23,12 @@ gráfica, ler e compreender os gráficos gerados pelas ferramentas de gerência,
 operações de troubleshooting.</p>
 
 ### Tecnologias
-Até o momento o estudo da disciplina compreende as seguintes ferramentas:
+Até o momento foram abordadas as seguintes ferramentas:
 
 - [Zabbix](https://www.zabbix.com/)
 - [Grafana](https://grafana.com/)
 - [GNS3](https://www.gns3.com/)
+- [Prometheus](https://prometheus.io/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [Linux](https://www.linux.org/)

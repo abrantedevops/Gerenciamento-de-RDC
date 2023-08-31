@@ -51,7 +51,7 @@ http://localhost:9090
 Obs.: Para monitora o Host Linux Mint (ou outro que desejar) é necessário que o node_exporter esteja sendo executando no Host. Para isso, envie e execute o script "node_exporter.sh" que está no diretório "node_exporter-1.6.1.linux-amd64". 
 ### Execução do node_exporter
 ```bash
-$ ./node_exporter.sh
+$ ./node_exporter
 ```
 
 ### Acesso ao Prometheus para monitorar o Host Linux Mint
