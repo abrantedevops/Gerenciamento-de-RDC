@@ -1,0 +1,31 @@
+version: '3.9'
+services:
+  prometheus-itself:
+    container_name: prometheus-itself
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheusitself:/etc/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+    networks:
+      - prometheus-net
+
+  prometheus-linuxmint:
+    container_name: prometheus-linuxmint
+    image: prom/prometheus
+    ports:
+      - 9092:9090
+    volumes:
+      - ./prometheuslinuxmint:/etc/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+    networks:
+      - prometheus-net
+
+networks:
+  prometheus-net:
+    driver: bridge
