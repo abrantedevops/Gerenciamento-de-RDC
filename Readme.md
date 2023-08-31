@@ -23,7 +23,7 @@ gráfica, ler e compreender os gráficos gerados pelas ferramentas de gerência,
 operações de troubleshooting.</p>
 
 ### Tecnologias
-Até o momento foram abordadas as seguintes ferramentas:
+Até o momento as seguintes tecnologias foram utilizadas para o desenvolvimento das práticas:
 
 - [Zabbix](https://www.zabbix.com/)
 - [Grafana](https://grafana.com/)
