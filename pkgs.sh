@@ -14,7 +14,7 @@ instalar_docker() {
 instalar_docker_compose() {
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
-
+    
 }
 
 #Práticas em que o uso do gns3 se faz necessário
@@ -25,14 +25,14 @@ instalar_gns3() {
 }
 
 main() {
-    # echo "Iniciando a instalação..."
-    # instalar_docker
-    # echo "Docker instalado com sucesso!"
+    echo "Iniciando a instalação..."
+    instalar_docker
+    echo "Docker instalado com sucesso!"
     instalar_docker_compose
     echo "Docker Compose instalado com sucesso!"
-    # instalar_gns3
-    # echo "GNS3 instalado com sucesso!"
-    # echo "Instalação concluída!"
+    instalar_gns3
+    echo "GNS3 instalado com sucesso!"
+    echo "Instalação concluída!"
 }
 
 main
