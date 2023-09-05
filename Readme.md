@@ -33,7 +33,7 @@ Até o momento as seguintes tecnologias foram utilizadas para o desenvolvimento 
 - [Docker Compose](https://docs.docker.com/compose/)
 - [Linux](https://www.linux.org/)
 
-### Dependências para iniciar as ferramentas por meio de containers
+### Dependências para iniciar as ferramentas por meio de containers Docker
 Para iniciar as ferramentas por meio de containers é essencial ter instalado em sua máquina o Docker e o Docker Compose. Há um script que instala as dependências necessárias juntamente com o GNS3, basta seguir o procedimento abaixo (distribuição Ubuntu).
 
 #### Clone este repositório

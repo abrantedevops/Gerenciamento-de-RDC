@@ -15,6 +15,7 @@ instalar_docker_compose() {
     sudo apt install -y docker-compose
 }
 
+#Práticas em que o uso do gns3 se faz necessário
 instalar_gns3() {
     sudo add-apt-repository ppa:gns3/ppa
     sudo apt update
