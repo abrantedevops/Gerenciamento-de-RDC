@@ -2,7 +2,7 @@ version: '3.9'
 services:
   nginx:
     container_name: nginx
-    image: nginx:latest
+    image: ng-zbagt:latest
     restart: always
     pull_policy: always
     volumes:
@@ -15,6 +15,7 @@ services:
         ipv4_address: 10.200.0.4
     ports:
       - 80:80
+      - 10050:10050
 
   php:
     container_name: php
@@ -60,6 +61,8 @@ services:
     networks:
       rede-03:
         ipv4_address: 10.200.0.7
+    expose:
+      - 10051
 
   zabbix-frontend:
     container_name: zabbix-frontend
@@ -101,7 +104,7 @@ services:
 
   zabbix-agent:
     container_name: zabbix-agent
-    image: zabbix/zabbix-agent2:ubuntu-trunk
+    image: zabbix/zabbix-agent2:ubuntu-6.4-latest
     restart: always
     pull_policy: always
     environment:
@@ -111,8 +114,9 @@ services:
     networks:
       rede-03:
         ipv4_address: 10.200.0.11
-    ports:
-      - 10050:10050
+    expose:
+      - 10050
+
 
 networks:
   rede-03:
