@@ -2,7 +2,9 @@
 
 <img src="./registry/trbl-zs.png" alt="Monitoramento Itself Prometheus" width="100%">
 
-Passos para a prática de Troubleshooting Zabbix:
+<br>
+
+### Passos:
 
 - cd dkf/
 - sudo docker build -t ng-zbagt .
@@ -16,15 +18,16 @@ Passos para a prática de Troubleshooting Zabbix:
 - sudo docker exec php docker-php-ext-install mysqli
 - sudo docker restart nginx php
 
-Testes no Browser:
+### Testes no Browser:
 
-- localhost
-- localhost/index.php
-- localhost/database.php
+- http://localhost
+- http://localhost/index.php
+- http://localhost/database.php
 
 ### Integração do Nginx com o Zabbix:
 
 <img src="./registry/z-1.png" alt="Monitoramento Itself Prometheus" width="100%">
+<br><br>
 <img src="./registry/z-2.png" alt="Monitoramento Itself Prometheus" width="100%">
 
 
