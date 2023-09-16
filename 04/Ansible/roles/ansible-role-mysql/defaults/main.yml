@@ -1,0 +1,7 @@
+---
+# defaults file for ansible-role-mysql
+mysql_root_user: root
+mysql_root_pass: root
+mysql_packages:
+  - default-mysql-server
+  - python3-pymysql

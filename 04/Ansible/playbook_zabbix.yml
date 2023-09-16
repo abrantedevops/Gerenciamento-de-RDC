@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - ansible-role-mysql
+    - role-zabbix-server
+...

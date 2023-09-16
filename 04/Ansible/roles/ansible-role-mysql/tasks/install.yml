@@ -1,0 +1,17 @@
+---
+- name: Atualizando a lista de pacotes
+  shell: |
+    sudo apt-get update -y
+
+- name: Install mysql packages
+  become: true
+  apt:
+    name: "{{ mysql_packages }}"
+    state: present
+
+- name: Start mysql service
+  service:
+    name: mysql
+    state: started
+    enabled: true
+...
