@@ -1,5 +1,6 @@
 ---
 - name: Atualizando a lista de pacotes
+  become: true
   shell: |
     sudo apt-get update -y
 

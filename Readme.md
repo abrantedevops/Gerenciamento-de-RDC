@@ -31,6 +31,8 @@ Até o momento as seguintes tecnologias foram utilizadas para o desenvolvimento 
 - [Prometheus](https://prometheus.io/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
+- [Vagrant](https://www.vagrantup.com/)
+- [Ansible](https://www.ansible.com/)
 - [Linux](https://www.linux.org/)
 
 ### Dependências para iniciar as ferramentas por meio de containers Docker

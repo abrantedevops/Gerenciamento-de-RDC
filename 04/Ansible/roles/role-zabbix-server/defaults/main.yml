@@ -1,5 +1,0 @@
----
-# defaults file for role-zabbix-server
-DBname: zabbbix
-DBuser: zabbbix
-DBPassword: zabbbix23
