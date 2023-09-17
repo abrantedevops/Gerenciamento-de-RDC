@@ -23,7 +23,7 @@ Após isso, basta acessar o endereço http://localhost:8080 para ter acesso a te
 ### Ansible 
 
 O ansible foi a segunda opção escolhida, foram criados dois cenários distintos para a instalação do Zabbix, um com o auxílio do Vagrant para um ambiente mais controlado e outro sem o Vagrant.
-Em ambos os casos, o ansible é executado no sistema operacional Debian 11.
+Em ambos os casos, o ansible é executado no sistema operacional <strong style="color:red;">Debian 11.</strong>
 
 Com o Vagrant:
 
