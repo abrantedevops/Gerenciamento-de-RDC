@@ -11,7 +11,7 @@ O desafio consiste em colocar o Zabbix para rodar usando pelo menos 2 das opçõ
 
 ### Docker
 
-A primeira opção escolhida foi o Docker, para isso foi criado um arquivo docker-compose.yml com a configuração para subir os containers zabbix-server, zabbix-frontend, zabbix-mariadb e zabbix-agent. Para subir os containers basta entrar no diretório "Docker" o comando abaixo:
+A primeira opção escolhida foi o Docker, para isso foi criado um arquivo docker-compose.yml com a configuração para subir os containers zabbix-server, zabbix-frontend, zabbix-mariadb e zabbix-agent. Para subir os containers entre no diretório "Docker" e execute o comando abaixo:
 
 ```bash
 cd Docker
@@ -35,7 +35,7 @@ sudo reboot
 
 Após a execução do playbook e reinicialização da VM, basta acessar no browser o endereço http://192.168.57.13/zabbix para ter acesso ao Zabbix.
 
-Para rodar o Zabbix sem o uso do Vagrant basta seguir o procedimento abaixo. Vale salientar que em ambos os cenários, o ansible é executado no sistema operacional <strong style="color:red;">Debian 11.</strong>. Caso opte por utilizar um sistema operacional distinto é de responsabilidade do usuário todo o troubleshooting necessário para que o playbook funcione corretamente, ou se preferir, cogite a utilização do Vagrant. 
+Para rodar o Zabbix sem o uso do Vagrant basta seguir o procedimento abaixo. Vale salientar que em ambos os cenários, o ansible é executado no sistema operacional <strong style="color:red;">Debian 11</strong>. Caso opte por utilizar um sistema operacional distinto é de responsabilidade do usuário todo o troubleshooting necessário para que o playbook funcione corretamente, ou se preferir, cogite a utilização do Vagrant. 
 
 ```bash
 cd Ansible-Vagrant
@@ -43,7 +43,7 @@ sudo ansible-playbook -i inventory.ini playbook_zabbix.yml
 sudo reboot
 ```
 
-Nesse instante o Ansible irá iniciar todas as tarefas necessárias para o provisionamento do ambiente, após a execução do playbook, basta acessar no browser o endereço http://localhost/zabbix para ter acesso ao Zabbix.
+Nesse instante o Ansible irá iniciar todas as tarefas necessárias para o provisionamento do ambiente, após a execução do playbook e o sistema ser reiniciado, basta acessar no browser o endereço http://localhost/zabbix para ter acesso ao Zabbix.
 
 
 
