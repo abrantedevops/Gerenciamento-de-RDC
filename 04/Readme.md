@@ -28,7 +28,7 @@ Em ambos os casos, o ansible é executado no sistema operacional <strong style="
 Com o Vagrant:
 
 ```bash
-cd Ansible
+cd Ansible-Vagrant
 vagrant up
 ```
 
@@ -37,7 +37,7 @@ Nesse momento uma máquina virtual com o sistema operacional Debian 11 está dis
 Sem o Vagrant:
 
 ```bash
-cd Ansible
+cd Ansible-Vagrant
 sudo ansible-playbook -i inventory.ini playbook_zabbix.yml
 ```
 
