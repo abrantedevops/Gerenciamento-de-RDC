@@ -23,13 +23,22 @@ As informações devem ser exibidas de modo inteligível, i.e. De modo que o usu
 <hr>
 
 ### Vagrant
-Através do arquivo Vagrantfile foi instanciado uma vm com o sistema operacional Fedora 28, sendo usado o provider libvirt, e nela foi realizada a instalação de todas as dependências necessárias do protocolo SNMP, bem como a configuração do mesmo conforme solicitado. Para subir a máquina virtual, execute o comando abaixo. Atenção: é necessário ter todas as dependências do libvirt instaladas na máquina, bem como o plugin vagrant-libvirt. No próprio Vagrantfile há um passo a passo de como instalar essas dependências.
+Através do arquivo Vagrantfile foi instanciado uma vm com o sistema operacional Fedora 28, sendo usado o provider libvirt, e nela foi realizada a instalação de todas as dependências necessárias do protocolo SNMP, bem como a configuração do mesmo conforme solicitado. Para subir a máquina virtual, execute o comando abaixo. 
+
+Atenção: é necessário ter todas as dependências do libvirt instaladas na máquina, bem como o plugin vagrant-libvirt. Para isso, siga as instruções abaixo:
 
 ```bash
-cd Vagrant
-vagrant up
+$ sudo apt update -y && sudo apt upgrade -y && sudo apt install vagrant ruby-libvirt qemu qemu-kvm virtinst libvirt-daemon-system libvirt-daemon libvirt-clients bridge-utils ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev libguestfs-tools -y && vagrant plugin install vagrant-libvirt
 ```
-Após a execução do comando acima, a máquina virtual estará pronta para ser utilizada. Para acessá-la:
+Em seguida, execute o comando abaixo para subir a máquina virtual:
+
+```bash
+$ cd Vagrant
+$ vagrant up
+# Caso apareça o erro de "storage pool", execute o "$ virsh pool-list --all" para verificar o nome do pool desejado e substitua no vagrantfile em "libvirt.storage_pool_name=". Em seguida, execute o "$ vagrant up" novamente.
+```
+
+Após a VM ser provisionada, é possível acessá-la através do comando:
 
 ```bash
 vagrant ssh

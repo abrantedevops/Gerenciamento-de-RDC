@@ -16,9 +16,9 @@ Vagrant.configure("2") do |config|
     config.vm.provider :libvirt do |libvirt|
       libvirt.driver = "kvm"
       libvirt.title = "Fedora_pratc05"
-#      libvirt.default_prefix = "fedora28_"
+      #libvirt.default_prefix = "fedora28_"
       libvirt.memory = "1024"
-      libvirt.storage_pool_name = "images"
+      libvirt.storage_pool_name = "default"
     end
     config.vm.hostname = "prat05"
   end
