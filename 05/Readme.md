@@ -23,7 +23,7 @@ As informações devem ser exibidas de modo inteligível, i.e. De modo que o usu
 <hr>
 
 ### Vagrant
-Através do arquivo Vagrantfile foi instanciado uma vm com o sistema operacional Fedora 28, sendo usado o provider libvirt, e nela foi realizada a instalação de todas as dependências necessárias do protocolo SNMP, bem como a configuração do mesmo conforme solicitado. Para subir a máquina virtual, execute o comando abaixo. 
+Através do arquivo Vagrantfile foi instanciado uma vm com o sistema operacional Fedora 28, sendo usado o provider libvirt, e nela foi realizada a instalação de todas as dependências necessárias do protocolo SNMP, bem como a configuração necessária à prática. 
 
 Atenção: é necessário ter todas as dependências do libvirt instaladas na máquina, bem como o plugin vagrant-libvirt. Para isso, siga as instruções abaixo:
 
