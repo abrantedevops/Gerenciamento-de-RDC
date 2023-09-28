@@ -19,10 +19,10 @@ Vagrant.configure("2") do |config|
     manager.vm.box_version = "20230801.01"
     manager.vm.provider :libvirt do |libvirt|
       libvirt.driver = "kvm"
-      libvirt.title = "Ubuntu_Server18.04_manager-server"
+      #libvirt.title = "Ubuntu_Server18.04_manager-server"
       #libvirt.default_prefix = "fedora28_"
       libvirt.memory = "1024"
-      libvirt.storage_pool_name = "images"
+      libvirt.storage_pool_name = "default"
     end
     manager.vm.hostname = "manager-server"
   end
@@ -35,14 +35,14 @@ Vagrant.configure("2") do |config|
     agent.vm.box_version = "20230801.01"
     agent.vm.provider :libvirt do |libvirt|
       libvirt.driver = "kvm"
-      libvirt.title = "Ubuntu_Server18.04_agent-server"
+      #libvirt.title = "Ubuntu_Server18.04_agent-server"
       #libvirt.default_prefix = "fedora28_"
       libvirt.memory = "1024"
-      libvirt.storage_pool_name = "images"
+      libvirt.storage_pool_name = "default"
     end
     agent.vm.hostname = "agent-server"
   end
-  
+
 end
 
 

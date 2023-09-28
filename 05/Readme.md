@@ -30,6 +30,12 @@ Atenção: é necessário ter todas as dependências do libvirt instaladas na m�
 ```bash
 $ sudo apt update -y && sudo apt upgrade -y && sudo apt install vagrant ruby-libvirt qemu qemu-kvm virtinst libvirt-daemon-system libvirt-daemon libvirt-clients bridge-utils ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev libguestfs-tools -y && vagrant plugin install vagrant-libvirt
 ```
+<p>Digite kvm-ok no terminal e verifique se a saída é a mesma da imagem abaixo:</p>
+<img src="./Vagrant/registry/kvm-ok.png" alt="snmp-vm-fedora" width="70%"/> 
+
+<br>
+
+
 Em seguida, execute o comando abaixo para subir a máquina virtual:
 
 ```bash
