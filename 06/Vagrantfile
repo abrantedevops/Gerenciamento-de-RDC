@@ -1,0 +1,49 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+#Parte 1 - Vagrant
+Vagrant.configure("2") do |config|
+  REQUIRED_PLUGINS = %w(vagrant-libvirt)
+  exit unless REQUIRED_PLUGINS.all? do |plugin|
+    Vagrant.has_plugin?(plugin) || (
+      puts "The #{plugin} plugin is required. Please install it with:"
+      puts "$ sudo apt install vagrant ruby-libvirt qemu qemu-kvm virtinst libvirt-daemon-system libvirt-daemon libvirt-clients bridge-utils ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev libguestfs-tools -y"
+      puts "$ vagrant plugin install #{plugin}"
+      false
+    )
+  end   
+
+  # Configuração VM1 Manager-Server
+  config.vm.define "manager-server" do |manager|
+    manager.vm.box = "peru/ubuntu-18.04-server-amd64"
+    manager.vm.box_version = "20230801.01"
+    manager.vm.provider :libvirt do |libvirt|
+      libvirt.driver = "kvm"
+      libvirt.title = "Ubuntu_Server18.04_manager-server"
+      #libvirt.default_prefix = "fedora28_"
+      libvirt.memory = "1024"
+      libvirt.storage_pool_name = "images"
+    end
+    manager.vm.hostname = "manager-server"
+  end
+
+
+
+  # Configuração VM2 Agent-Server
+  config.vm.define "agent-server" do |agent|
+    agent.vm.box = "peru/ubuntu-18.04-server-amd64"
+    agent.vm.box_version = "20230801.01"
+    agent.vm.provider :libvirt do |libvirt|
+      libvirt.driver = "kvm"
+      libvirt.title = "Ubuntu_Server18.04_agent-server"
+      #libvirt.default_prefix = "fedora28_"
+      libvirt.memory = "1024"
+      libvirt.storage_pool_name = "images"
+    end
+    agent.vm.hostname = "agent-server"
+  end
+  
+end
+
+
+    
