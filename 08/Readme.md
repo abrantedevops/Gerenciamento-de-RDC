@@ -35,7 +35,7 @@ Para o provisionamento do ambiente, execute o arquivo docker-compose.yml dispon�
 
 ```bash
 $ docker-compose up -d
-$ docker-compose down (para destruir os containers)
+$ docker-compose down (parar os containers)
 ```
 O servidor estará disponível em http://localhost:3000
 
