@@ -1,0 +1,22 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+#Configuração VM Zabbix Server
+Vagrant.configure("2") do |config|
+    config.vm.define "zabbix-server" do |manager|
+      manager.vm.box = "generic/debian11"
+      manager.vm.provider :libvirt do |libvirt|
+        libvirt.driver = "kvm"
+        libvirt.memory = "1024"
+        libvirt.storage_pool_name = "images"
+      end
+      manager.vm.hostname = "zabbix-server"
+      
+      config.vm.provision "ansible" do |ansible|
+      ansible.playbook = "playbook_zabbix.yml"
+    end
+  end
+end
+  
+  
+      

@@ -1,0 +1,66 @@
+---
+# tasks file for role-zabbix-server
+
+- name: Instalando o repositório do Zabbix
+  apt:
+    deb: https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
+    state: present
+    update_cache: yes
+
+- name: Instalando os pacotes necessários
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop:
+    - zabbix-server-mysql
+    - zabbix-frontend-php
+    - zabbix-apache-conf
+    - zabbix-sql-scripts
+    - zabbix-agent
+
+- name: Criando o database do Zabbix
+  mysql_db:
+    name: zabbix
+    state: present
+    collation: utf8mb4_bin
+    encoding: utf8mb4
+    login_host: localhost
+    login_user: root
+    login_password: root
+  register: db_created
+
+- name: Criando o usuário do Zabbix
+  mysql_user:
+    login_host: localhost
+    login_user: root
+    login_password: root
+    name: zabbix
+    password: zabbix23
+    priv: "zabbix.*:ALL"
+    state: present
+    host: localhost
+  register: user_created
+
+- name: Descompactar e importar o arquivo server.sql.gz no banco de dados do Zabbix
+  shell: zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -pzabbix23 zabbix
+  args:
+    executable: /bin/bash
+  when: db_created.changed or user_created.changed
+
+- name: Copiando o template do Zabbix server
+  template:
+    src: zabbix_server.conf
+    dest: /etc/zabbix/zabbix_server.conf
+
+- name: Iniciando os serviços do Zabbix
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+  loop:
+    - zabbix-server
+    - zabbix-agent
+    - apache2
+
+...
