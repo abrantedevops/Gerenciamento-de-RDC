@@ -51,8 +51,8 @@ Agora crie uma nova trigger chamada “Tráfego Acima do Limite” para o item �
 O menu “Relatórios” permite obter um conjunto de informações úteis sobre o funcionamento dos hosts. Pode-se verificar o relatório de disponibilidade, os Top 100 triggers o log de ações no Zabbix e as notificações. Clique em “Relatório de disponibilidade”. É possível verificar o percentual de tempo em que um determinado host apresentou algum incidente devido a alguma trigger específica e o percentual de tempo em que o status estava “Ok”. Ao clicar nessa opção deverá aparecer o incidente “Tráfego Acima do Limite”, que foi criado durante essa prática. É possível verificar graficamente a disponibilidade, clicando em “Mostrar”. Faça isso para o incidente “Tráfego Acima do Limite” e tire um print da tela com o gráfico. Perceba que o gráfico mostra para cada dia o percentual do tempo em que o host estava “Ok” e o percentual de tempo em que o incidente ocorreu.
 
 <p align="center">
-  <img src="registry/12.png">
   <img src="registry/13.png">
+  <img src="registry/12.png">
   <img src="registry/14.png">
 </p>
 
