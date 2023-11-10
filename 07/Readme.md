@@ -1,4 +1,4 @@
-<h2 align="center">Prática 07 - Monitoramento Web - Zabbix</h2>
+<h1 align="center">Prática 07 - Monitoramento Web - Zabbix</h1>
 
 Para o provisionamento do ambiente, execute o arquivo docker-compose.yml disponível no diretório da prática, usando o comando abaixo:
 

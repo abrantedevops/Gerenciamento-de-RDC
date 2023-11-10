@@ -1,4 +1,4 @@
-<h2 align="center">Prática 08 - Servidor auto-hospedado de versionamento de códigos GitLab</h2>
+<h1 align="center">Prática 08 - Servidor auto-hospedado de versionamento de códigos GitLab</h1>
 
 <p align="justify"> Instale e configure um servidor próprio de versionamento de códigos GitLab. Este será usado para gerenciamento de configurações. Crie um novo repositório e adicione o Vagrantfile usado para subir uma máquina Zabbix.</p>
 

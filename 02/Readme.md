@@ -1,4 +1,4 @@
-<h2 align="center">Prática 02</h2>
+<h1 align="center">Prática 02</h1>
 
 ### Objetivo da prática
 <p align="justify">Verifique as aplicações que possuem a mesma funcionalidade/ou quase, fazendo um breve resumo sobre cada um deles e se possível com vantagens e desvantagens. Escolha um deles e faça a instalação e configuração para poder compará-lo ao Zabbix (Prática 01).</p>

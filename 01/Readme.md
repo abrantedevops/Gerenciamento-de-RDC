@@ -1,4 +1,4 @@
-<h2 align="center">Prática 01</h2>
+<h1 align="center">Prática 01</h1>
 
 ### Objetivo da prática
 <p align="justify">Instalação do Zabbix Server. Colocá-lo para gerenciar 3 ativos de redes: 1 Máquina Linux, 1 Máquina Windows e um roteador. Adicionar gerenciamento do máximo de informações possível: HD, Networking, Ram, Disco, [...]. Além disso, adicione gráficos e alertas ao servidor e faça a integração com o Grafana.</p>

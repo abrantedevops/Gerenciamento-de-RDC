@@ -1,4 +1,4 @@
-<h2 align="center">Prática 05 - SNMP + Python + Linux</h2>
+<h1 align="center">Prática 05 - SNMP + Python + Linux</h1>
 
 1- Instale (OU pegue já instalada) uma máquina virtual de alguma distribuição baseada em Red Hat. Se possível, instale-a sem interface gráfica.
 

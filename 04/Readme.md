@@ -1,4 +1,4 @@
-<h2 align="center">Prática 04 - Atalhos são Caminhos mais curtos?</h2>
+<h1 align="center">Prática 04 - Atalhos são Caminhos mais curtos?</h1>
 
 Existem alguns atalhos para colocar um Zabbix no ar mais rapidamente, por exemplo:
 
