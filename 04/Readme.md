@@ -9,6 +9,8 @@ Existem alguns atalhos para colocar um Zabbix no ar mais rapidamente, por exempl
 
 O desafio consiste em colocar o Zabbix para rodar usando pelo menos 2 das opções acima (uma entra as 2 primeiras e uma entre as duas últimas).
 
+<hr>
+
 ### Docker
 
 A primeira opção escolhida foi o Docker, para isso foi criado um arquivo docker-compose.yml com a configuração para subir os containers zabbix-server, zabbix-frontend, zabbix-mariadb e zabbix-agent. Para subir os containers entre no diretório "Docker" e execute o comando abaixo:
