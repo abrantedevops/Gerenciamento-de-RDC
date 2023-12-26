@@ -2,7 +2,7 @@
 
 <p align="center"><img src="./bki/grc.png" alt="Scope" style="max-width:70%"></p>
 
-<p align="justify">Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas que são abordadas na disciplina, além disso optei por utilizar o GNS3 para as topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
+<p align="justify">Este repositório tem a função de armazenar o conteúdo desenvolvido durante a disciplina de Gerenciamento de Redes de Computadores, ministrada pelo professor Thiago Gouveia do curso de Tecnologia de Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. O material disponibilizado possui como característica o uso de containers para a execução das ferramentas que são abordadas na disciplina, além disso optei por utilizar os simuladores GNS3 e PnetLab para o desenvolvimento das topologias de rede. Por fim espera-se que este espaço possa auxiliar no aprendizado de todos os alunos ou interessados.</p>
 
 <p align="center">
   <a href="#objetivo">Objetivo</a> •
@@ -13,27 +13,33 @@
   <a href="#autor">Autor</a>
 </p>
 
-<h4 align="center"> 
-    🚧  Em construção...  🚧
-</h4>
-
 ### Objetivo
 <p align="justify">O objetivo da disciplina consiste em conhecer os métodos para administrar e gerenciar uma rede de computadores, manusear ferramentas com interface por linhas de comando como interface 
 gráfica, ler e compreender os gráficos gerados pelas ferramentas de gerência, tomar decisões através de políticas estabelecidas ou falhas apresentadas e realizar as principais 
 operações de troubleshooting.</p>
 
 ### Tecnologias
-Até o momento as seguintes tecnologias foram utilizadas para o desenvolvimento das práticas:
+As seguintes tecnologias foram utilizadas para o desenvolvimento das práticas:
 
 - [Zabbix](https://www.zabbix.com/)
 - [Grafana](https://grafana.com/)
 - [GNS3](https://www.gns3.com/)
+- [PnetLab](https://pnetlab.com/)
+- [MariaDB](https://mariadb.org/)
 - [Prometheus](https://prometheus.io/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [Vagrant](https://www.vagrantup.com/)
 - [Ansible](https://www.ansible.com/)
 - [Linux](https://www.linux.org/)
+- [Windows Server](https://www.microsoft.com/pt-br/windows-server)
+- [Cisco IOS](https://www.cisco.com)
+- [iSpy](https://www.ispyconnect.com/)
+- [TrueNAS](https://www.truenas.com/)
+- [Sys-ControlVMs](https://github.com/abrantedevops/Sys-ControlVMs)
+- [Fortinet](https://www.fortinet.com/)
+- [Moodle](https://moodle.org/)
+
 
 ### Dependências para iniciar as ferramentas por meio de containers Docker
 Para iniciar as ferramentas por meio de containers é essencial ter instalado em sua máquina o Docker e o Docker Compose. Há um script que instala as dependências necessárias juntamente com o GNS3, basta seguir o procedimento abaixo (distribuição Ubuntu).
